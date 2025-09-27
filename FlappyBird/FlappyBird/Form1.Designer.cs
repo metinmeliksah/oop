@@ -50,6 +50,11 @@
             this.Flying_timer1.Enabled = true;
             this.Flying_timer1.Tick += new System.EventHandler(this.Flying_timer1_Tick);
             // 
+            // Fall_down_timer1
+            // 
+            this.Fall_down_timer1.Enabled = true;
+            this.Fall_down_timer1.Tick += new System.EventHandler(this.Fall_down_timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

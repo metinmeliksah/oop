@@ -29,7 +29,7 @@ namespace FlappyBird
 
         private void FlappyBirdpictureBox1_Click(object sender, EventArgs e)
         {
-
+            Target_Y_Location = FlappyBirdpictureBox1.Top - 80;
         }
 
         private void Flying_timer1_Tick(object sender, EventArgs e)
@@ -43,6 +43,32 @@ namespace FlappyBird
             {
                 FlappyBirdpictureBox1.Image = Properties.Resources.Flappy_Bird_2;
                 Fly_Boolean = true;
+            }
+        }
+
+        private void Fall_down_timer1_Tick(object sender, EventArgs e)
+        {
+            if(FlappyBirdpictureBox1.Top != Target_Y_Location)
+            {
+               if(FlappyBirdpictureBox1.Top < Target_Y_Location)
+                {
+                    FlappyBirdpictureBox1.Top += 10;
+                }
+               else
+                {
+                    FlappyBirdpictureBox1.Top -= 10;
+                }
+            }
+            else
+            {
+                if(Target_Y_Location != 800)
+                {
+                    Target_Y_Location = 800;
+                }
+                else
+                {
+                    //sonra
+                }
             }
         }
     }
