@@ -61,6 +61,42 @@ namespace FlappyBird.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FlappyBird\BUILD_GUIDE.md.
+        /// </summary>
+        internal static string Build_GuideMd {
+            get {
+                return ResourceManager.GetString("Build_GuideMd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlappyBird\BuildStandalone.bat.
+        /// </summary>
+        internal static string BuildStandaloneBat {
+            get {
+                return ResourceManager.GetString("BuildStandaloneBat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlappyBird\BuildStandalone.ps1.
+        /// </summary>
+        internal static string BuildStandalonePs1 {
+            get {
+                return ResourceManager.GetString("BuildStandalonePs1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlappyBird\CreateIcon.ps1.
+        /// </summary>
+        internal static string CreateIconPs1 {
+            get {
+                return ResourceManager.GetString("CreateIconPs1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Flappy_Bird_1 {
@@ -77,6 +113,54 @@ namespace FlappyBird.Properties {
             get {
                 object obj = ResourceManager.GetObject("Flappy_Bird_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon FlappyBird {
+            get {
+                object obj = ResourceManager.GetObject("FlappyBird", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlappyBird\FlappyBird_Standalone.csproj.
+        /// </summary>
+        internal static string FlappyBird_StandaloneCsproj {
+            get {
+                return ResourceManager.GetString("FlappyBird_StandaloneCsproj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PipeBody {
+            get {
+                object obj = ResourceManager.GetObject("PipeBody", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PipeHead {
+            get {
+                object obj = ResourceManager.GetObject("PipeHead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlappyBird\QuickBuild.ps1.
+        /// </summary>
+        internal static string QuickBuildPs1 {
+            get {
+                return ResourceManager.GetString("QuickBuildPs1", resourceCulture);
             }
         }
     }
