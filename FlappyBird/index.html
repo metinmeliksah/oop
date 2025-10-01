@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Öğrenci Projeleri</title>
+	<meta name="description" content="Öğrenci projeleri, biyografi ve iletişim bilgileri tek sayfada">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="icon" href="assets/images/favicon.png">
+</head>
+<body>
+	<header class="site-header" role="banner">
+		<div class="container">
+			<a class="brand" href="#ana-sayfa">Öğrenci</a>
+			<nav class="nav" aria-label="Ana menü">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menüyü aç/kapat">☰</button>
+				<ul id="site-menu" class="menu">
+					<li><a href="#ana-sayfa">Ana Sayfa</a></li>
+					<li><a href="#proje">Proje</a></li>
+					<li><a href="#hakkimda">Hakkımda</a></li>
+					<li><a href="#iletisim">İletişim</a></li>
+				</ul>
+			</nav>
+			<button id="theme-toggle" class="theme-toggle" aria-label="Tema değiştir">🌙</button>
+		</div>
+	</header>
+
+	<main id="ana-sayfa" class="hero" tabindex="-1">
+		<div class="container">
+			<div class="hero-content">
+				<img id="profile-image" class="profile" src="https://www.metindermencioglu.com/images/avatar.jpeg" alt="Profil görseli" loading="lazy">
+				<div>
+					<h1 id="student-name">Ad Soyad</h1>
+					<p id="student-bio">Kısa biyografi: İlgi alanları, hedefler ve çalışılan teknolojiler.</p>
+					<div class="links" id="social-links" aria-label="Sosyal bağlantılar"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section id="proje" class="section">
+		<div class="container">
+			<div class="subsection section-card">
+				<h2 id="project-title">Proje</h2>
+				<h3 class="subheading">Genel Bakış</h3>
+				<p id="project-desc" class="project-desc"></p>
+				<h3 class="subheading">Teknolojiler</h3>
+				<div id="project-badges" class="badges"></div>
+				<h3 class="subheading">Bağlantılar</h3>
+				<div id="project-actions" class="card-actions"></div>
+			</div>
+
+			<div class="subsection section-card">
+				<h3 class="subheading">Galeri</h3>
+				<div class="gallery-wrap">
+				<button class="gallery-nav prev" aria-label="Önceki">‹</button>
+				<div id="project-gallery" class="gallery" aria-roledescription="carousel"></div>
+				<button class="gallery-nav next" aria-label="Sonraki">›</button>
+				</div>
+			</div>
+
+			
+
+			<div class="subsection section-card video-section">
+				<h3>Video</h3>
+				<div id="project-video" class="project-media"></div>
+				<!-- Statik embed kaldırıldı; video JS tarafından #project-video içine yerleştiriliyor. -->
+			</div>
+		</div>
+	</section>
+
+	<section id="hakkimda" class="section">
+		<div class="container">
+			<h2>Hakkımda</h2>
+			<div id="about-content" class="prose">
+				<p>Merhaba! Ben Metin, yazılım mühendisliği öğrencisi ve geliştiriciyim. Web ve masaüstü uygulamalar yapmayı seviyorum.</p>
+				<p>Bu sayfada projelerimi ve öğrendiklerimi paylaşıyorum. Geri bildirimleriniz benim için değerli!</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="iletisim" class="section">
+		<div class="container">
+			<h2>İletişim</h2>
+			<ul class="contact-list" id="contact-list"></ul>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> <span id="footer-name">Öğrenci</span>. Tüm hakları saklıdır.</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/projects.js" defer></script>
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
